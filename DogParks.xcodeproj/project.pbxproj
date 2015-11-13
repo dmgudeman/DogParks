@@ -42,6 +42,8 @@
 		5D7465FB1BD83AD300B16F2D /* twinlakesstatebeach.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D7465E51BD83AD300B16F2D /* twinlakesstatebeach.jpg */; };
 		5D7465FC1BD83AD300B16F2D /* universityterracepark.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D7465E61BD83AD300B16F2D /* universityterracepark.jpg */; };
 		5DACC19C1BD6E18D0068700A /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DACC19B1BD6E18D0068700A /* MyTableViewCell.swift */; };
+		710DFD111BF56FB70094B547 /* DogParks.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 710DFD0F1BF56FB70094B547 /* DogParks.xcdatamodeld */; };
+		710DFD131BF570030094B547 /* DogParksObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710DFD121BF570030094B547 /* DogParksObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +96,8 @@
 		5D7465E51BD83AD300B16F2D /* twinlakesstatebeach.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = twinlakesstatebeach.jpg; sourceTree = "<group>"; };
 		5D7465E61BD83AD300B16F2D /* universityterracepark.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = universityterracepark.jpg; sourceTree = "<group>"; };
 		5DACC19B1BD6E18D0068700A /* MyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
+		710DFD101BF56FB70094B547 /* DogParks.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DogParks.xcdatamodel; sourceTree = "<group>"; };
+		710DFD121BF570030094B547 /* DogParksObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogParksObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				5D02E6391BD1599300A16824 /* AppDelegate.swift */,
+				710DFD0F1BF56FB70094B547 /* DogParks.xcdatamodeld */,
 				5D7465C71BD7039F00B16F2D /* MyDetailViewController.swift */,
 				5DACC19B1BD6E18D0068700A /* MyTableViewCell.swift */,
 				5D02E65B1BD15CB700A16824 /* MyTableViewController.swift */,
@@ -170,6 +175,7 @@
 				5D7465CD1BD82CE300B16F2D /* BrianAndGrumbeer.jpg */,
 				5D7465CF1BD82CE700B16F2D /* DavidGudeman.jpg */,
 				5D02E6371BD1599300A16824 /* Supporting Files */,
+				710DFD121BF570030094B547 /* DogParksObject.swift */,
 			);
 			path = DogParks;
 			sourceTree = "<group>";
@@ -327,8 +333,10 @@
 			files = (
 				5D02E63A1BD1599300A16824 /* AppDelegate.swift in Sources */,
 				5D02E65C1BD15CB700A16824 /* MyTableViewController.swift in Sources */,
+				710DFD131BF570030094B547 /* DogParksObject.swift in Sources */,
 				5DACC19C1BD6E18D0068700A /* MyTableViewCell.swift in Sources */,
 				5D5F34361BD8586400F2FFC0 /* AboutViewController.swift in Sources */,
+				710DFD111BF56FB70094B547 /* DogParks.xcdatamodeld in Sources */,
 				5D7465C81BD7039F00B16F2D /* MyDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -539,6 +547,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		710DFD0F1BF56FB70094B547 /* DogParks.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				710DFD101BF56FB70094B547 /* DogParks.xcdatamodel */,
+			);
+			currentVersion = 710DFD101BF56FB70094B547 /* DogParks.xcdatamodel */;
+			path = DogParks.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 5D02E62C1BD1599300A16824 /* Project object */;
 }

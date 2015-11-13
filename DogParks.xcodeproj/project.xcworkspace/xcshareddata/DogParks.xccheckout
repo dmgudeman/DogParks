@@ -5,13 +5,11 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>3F5D1104-299B-4CEA-8D81-13F7F2401E1E</string>
+	<string>4EA71BE7-FDD1-49F4-A6F8-6241E2CC6B54</string>
 	<key>IDESourceControlProjectName</key>
 	<string>DogParks</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>53920DDFDB93E5DD9E05D33B73766F533D9CAE11</key>
-		<string>https://github.com/dmgudeman/DogParks_4.git</string>
 		<key>C067D6251BBD7A40129796089066D64D6CD6DFA2</key>
 		<string>https://github.com/dmgudeman/DogParks.git</string>
 	</dict>
@@ -19,8 +17,6 @@
 	<string>DogParks.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>53920DDFDB93E5DD9E05D33B73766F533D9CAE11</key>
-		<string>../../..</string>
 		<key>C067D6251BBD7A40129796089066D64D6CD6DFA2</key>
 		<string>../..</string>
 	</dict>
@@ -32,14 +28,6 @@
 	<string>C067D6251BBD7A40129796089066D64D6CD6DFA2</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>53920DDFDB93E5DD9E05D33B73766F533D9CAE11</string>
-			<key>IDESourceControlWCCName</key>
-			<string></string>
-		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>

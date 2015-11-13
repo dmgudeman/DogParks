@@ -14,18 +14,21 @@ class MyDetailViewController: UIViewController {
     @IBOutlet weak var dogParkName: UITextView!
     @IBOutlet weak var dogParkDetails: UITextView!
     
-    var dogParkImageText: String!
-    var dogParkNameText: String!
-    var dogParkDetailsText: String!
-    
+//    var dogParkImageText: String!
+//    var dogParkNameText: String!
+//    var dogParkDetailsText: String!
+  
+  var DogParksDetail : DogParksObject!
+  
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        self.dogParkImage.image = UIImage(named: self.dogParkImageText)
-        self.dogParkName.text = self.dogParkNameText
-        self.dogParkDetails.text = self.dogParkDetailsText
+      
+        self.dogParkName.text = self.DogParksDetail.dogParkNames
+        self.dogParkDetails.text = self.DogParksDetail.dogParkDetails
+        self.dogParkImage.image = UIImage(named: self.DogParksDetail.dogParkImages)
     }
 
     override func didReceiveMemoryWarning() {
