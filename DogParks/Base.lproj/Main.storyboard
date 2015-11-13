@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="kJW-DE-W2n">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Santa Cruz Dog Parks-->
+        <scene sceneID="sLQ-3G-h8r">
+            <objects>
+                <tableViewController id="rp0-Vv-F1l" customClass="MyTableViewController" customModule="DogParks" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="136" sectionHeaderHeight="22" sectionFooterHeight="22" id="1vc-Uq-R3X">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="DogParkCell" rowHeight="136" id="Xhi-qD-ZYP" customClass="MyTableViewCell" customModule="DogParks" customModuleProvider="target">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Xhi-qD-ZYP" id="Omn-QB-8Ob">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x3U-iH-1G4" userLabel="Dog Park Image">
+                                            <rect key="frame" x="157" y="3" width="130" height="130"/>
+                                        </imageView>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" editable="NO" text="Park Name" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="oqN-zB-R1H" userLabel="Dog Park Name">
+                                            <rect key="frame" x="19" y="3" width="130" height="130"/>
+                                            <color key="textColor" red="0.95858588242771647" green="0.63960225517878966" blue="0.3165174595186892" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.40303032687216089" green="0.26891602588599262" blue="0.13307741904928644" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="dogParkImage" destination="x3U-iH-1G4" id="G7X-z1-sRE"/>
+                                    <outlet property="dogParkTextView" destination="oqN-zB-R1H" id="QEy-17-7xs"/>
+                                    <segue destination="pSO-ng-Mvh" kind="push" identifier="ShowParkDetails" id="mCq-fo-vY1"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="rp0-Vv-F1l" id="N6r-bk-Iie"/>
+                            <outlet property="delegate" destination="rp0-Vv-F1l" id="KDv-cd-prh"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Santa Cruz Dog Parks" id="8sf-ze-tww"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HOm-8j-Cjy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1095" y="497"/>
+        </scene>
+        <!--Developer Information-->
+        <scene sceneID="dRJ-RX-es8">
+            <objects>
+                <navigationController id="YFB-PU-xqF" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Developer Information" id="scW-WS-t0D"/>
+                    <navigationItem key="navigationItem" id="4m7-Z1-acH"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Yv5-U9-cG0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="JK6-de-gaG" kind="relationship" relationship="rootViewController" id="ZrV-ib-vYW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aXR-YC-Hly" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="612" y="1106"/>
+        </scene>
+        <!--About View Controller-->
+        <scene sceneID="HXb-Nb-20W">
+            <objects>
+                <viewController id="JK6-de-gaG" customClass="AboutViewController" customModule="DogParks" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ddv-OL-0mC"/>
+                        <viewControllerLayoutGuide type="bottom" id="tV5-hR-GXX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bOg-pi-6Ki">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="David Gudeman" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="88x-F0-gOV">
+                                <rect key="frame" x="76" y="8" width="158" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="EhS-8X-Bln"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DavidGudeman" translatesAutoresizingMaskIntoConstraints="NO" id="ntQ-N9-Pbj" userLabel="David Image">
+                                <rect key="frame" x="29" y="35" width="253" height="123"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="123" id="hG5-8w-h7Z"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zCh-Wn-fY0" userLabel="Brian Info">
+                                <rect key="frame" x="11" y="432" width="288" height="93"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="93" id="LYf-ZD-ONG"/>
+                                </constraints>
+                                <string key="text">This is co-author Brian Fiala and his puppy, Grumbeer. Her name means 'potato' in a German dialect. He has enjoyed working with animals for many years, and now enthusiastically pursues a career in software development.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qv9-8r-lhG" userLabel="David Info">
+                                <rect key="frame" x="16" y="152" width="288" height="109"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="109" id="evA-Gc-5Ln"/>
+                                </constraints>
+                                <string key="text">This is co-author David Gudeman with Sugar. Sugar is what David considers a rent-a-puppy because Sugar is his ex-wife's dog. David gets to enjoy the benefits of Sugar when he is with his kids, and David is happy because he doesn't have to feed and clean up after the dog!</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BrianAndGrumbeer" translatesAutoresizingMaskIntoConstraints="NO" id="9Lq-cu-HV8" userLabel="Brian Image">
+                                <rect key="frame" x="11" y="276" width="153" height="159"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="153" id="c6Q-kr-Mma"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GrumbeerPuppy" translatesAutoresizingMaskIntoConstraints="NO" id="78D-nI-iu2" userLabel="Brian Image">
+                                <rect key="frame" x="147" y="276" width="157" height="159"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="157" id="26M-Q2-ogJ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brian Fiala" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BwJ-sW-kpO">
+                                <rect key="frame" x="104" y="249" width="103" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="kR1-IV-ZmC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93624718350406111" green="1" blue="0.9131877944558211" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Qv9-8r-lhG" firstAttribute="trailing" secondItem="78D-nI-iu2" secondAttribute="trailing" id="2VA-k3-dho"/>
+                            <constraint firstItem="9Lq-cu-HV8" firstAttribute="leading" secondItem="bOg-pi-6Ki" secondAttribute="leadingMargin" constant="-5" id="AbO-Pr-IYT"/>
+                            <constraint firstItem="Qv9-8r-lhG" firstAttribute="trailing" secondItem="bOg-pi-6Ki" secondAttribute="trailingMargin" id="Ag5-nH-X84"/>
+                            <constraint firstItem="BwJ-sW-kpO" firstAttribute="top" secondItem="ntQ-N9-Pbj" secondAttribute="bottom" constant="91" id="EQb-9O-wqW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zCh-Wn-fY0" secondAttribute="trailing" constant="5" id="Fu3-DP-10A"/>
+                            <constraint firstItem="ntQ-N9-Pbj" firstAttribute="leading" secondItem="bOg-pi-6Ki" secondAttribute="leadingMargin" constant="13" id="Ica-T4-Btf"/>
+                            <constraint firstItem="78D-nI-iu2" firstAttribute="top" secondItem="BwJ-sW-kpO" secondAttribute="bottom" constant="2" id="L5R-eh-DWc"/>
+                            <constraint firstItem="Qv9-8r-lhG" firstAttribute="leading" secondItem="bOg-pi-6Ki" secondAttribute="leadingMargin" id="MkB-gi-HIy"/>
+                            <constraint firstItem="78D-nI-iu2" firstAttribute="top" secondItem="9Lq-cu-HV8" secondAttribute="top" id="UFH-69-fdu"/>
+                            <constraint firstItem="ntQ-N9-Pbj" firstAttribute="top" secondItem="88x-F0-gOV" secondAttribute="bottom" constant="2" id="Uge-0E-ZfS"/>
+                            <constraint firstItem="88x-F0-gOV" firstAttribute="top" secondItem="Ddv-OL-0mC" secondAttribute="bottom" constant="8" symbolic="YES" id="Vlz-R4-ZOs"/>
+                            <constraint firstItem="78D-nI-iu2" firstAttribute="top" secondItem="Qv9-8r-lhG" secondAttribute="bottom" constant="15" id="XrA-cN-Iig"/>
+                            <constraint firstItem="BwJ-sW-kpO" firstAttribute="centerX" secondItem="ntQ-N9-Pbj" secondAttribute="centerX" id="aKi-tR-ueq"/>
+                            <constraint firstItem="BwJ-sW-kpO" firstAttribute="leading" secondItem="bOg-pi-6Ki" secondAttribute="leadingMargin" constant="88" id="anx-fO-tp1"/>
+                            <constraint firstItem="78D-nI-iu2" firstAttribute="bottom" secondItem="9Lq-cu-HV8" secondAttribute="bottom" id="bAE-bG-hmS"/>
+                            <constraint firstItem="BwJ-sW-kpO" firstAttribute="centerX" secondItem="zCh-Wn-fY0" secondAttribute="centerX" id="f5o-2P-D14"/>
+                            <constraint firstItem="zCh-Wn-fY0" firstAttribute="leading" secondItem="9Lq-cu-HV8" secondAttribute="leading" id="f9l-1r-0no"/>
+                            <constraint firstItem="tV5-hR-GXX" firstAttribute="top" secondItem="9Lq-cu-HV8" secondAttribute="bottom" constant="84" id="h8J-z6-FrJ"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="zCh-Wn-fY0" secondAttribute="bottom" constant="43" id="kLK-Ze-LQ2"/>
+                            <constraint firstItem="ntQ-N9-Pbj" firstAttribute="centerX" secondItem="88x-F0-gOV" secondAttribute="centerX" id="mJK-z7-M7x"/>
+                            <constraint firstItem="88x-F0-gOV" firstAttribute="leading" secondItem="bOg-pi-6Ki" secondAttribute="leadingMargin" constant="60" id="mMd-Qg-2K6"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="7r0-Pv-W8t"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4KV-l1-PoN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1095" y="1106"/>
+        </scene>
+        <!--My Detail View Controller-->
+        <scene sceneID="iFY-DJ-GRP">
+            <objects>
+                <viewController id="pSO-ng-Mvh" customClass="MyDetailViewController" customModule="DogParks" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Dwi-Wy-sWB"/>
+                        <viewControllerLayoutGuide type="bottom" id="Dw2-Ds-IlR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ka8-fd-DnQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cpd-gl-fpu" userLabel="Dog Park Image">
+                                <rect key="frame" x="16" y="72" width="130" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="9gq-Hj-zkt"/>
+                                    <constraint firstAttribute="width" constant="130" id="bjX-EI-Nln"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" editable="NO" text="Dog Park Name" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="RDa-gd-9JQ" userLabel="Dog Park Name">
+                                <rect key="frame" x="154" y="72" width="150" height="130"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Dog Park Details" translatesAutoresizingMaskIntoConstraints="NO" id="54w-8Y-fDX" userLabel="Dog Park Details">
+                                <rect key="frame" x="16" y="210" width="288" height="338"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="54w-8Y-fDX" firstAttribute="trailing" secondItem="RDa-gd-9JQ" secondAttribute="trailing" id="5rE-3d-hLN"/>
+                            <constraint firstItem="54w-8Y-fDX" firstAttribute="top" secondItem="RDa-gd-9JQ" secondAttribute="bottom" constant="8" symbolic="YES" id="KSf-2u-IXP"/>
+                            <constraint firstItem="cpd-gl-fpu" firstAttribute="leading" secondItem="Ka8-fd-DnQ" secondAttribute="leadingMargin" id="eFz-wn-iho"/>
+                            <constraint firstAttribute="bottom" secondItem="54w-8Y-fDX" secondAttribute="bottom" constant="20" symbolic="YES" id="g8A-dP-usG"/>
+                            <constraint firstItem="54w-8Y-fDX" firstAttribute="leading" secondItem="cpd-gl-fpu" secondAttribute="leading" id="i4h-H9-ag0"/>
+                            <constraint firstItem="54w-8Y-fDX" firstAttribute="top" secondItem="cpd-gl-fpu" secondAttribute="bottom" constant="8" symbolic="YES" id="lxt-9u-AO0"/>
+                            <constraint firstItem="RDa-gd-9JQ" firstAttribute="leading" secondItem="cpd-gl-fpu" secondAttribute="trailing" constant="8" symbolic="YES" id="nTb-kA-G8i"/>
+                            <constraint firstItem="cpd-gl-fpu" firstAttribute="top" secondItem="Dwi-Wy-sWB" secondAttribute="bottom" constant="8" symbolic="YES" id="nYq-8v-fqO"/>
+                            <constraint firstItem="cpd-gl-fpu" firstAttribute="top" secondItem="RDa-gd-9JQ" secondAttribute="top" id="p8C-dD-FHc"/>
+                            <constraint firstItem="RDa-gd-9JQ" firstAttribute="trailing" secondItem="Ka8-fd-DnQ" secondAttribute="trailingMargin" id="r63-9I-mUG"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="gPR-Fl-0I0"/>
+                    <connections>
+                        <outlet property="dogParkDetails" destination="54w-8Y-fDX" id="mPi-mr-3ZI"/>
+                        <outlet property="dogParkImage" destination="cpd-gl-fpu" id="iCo-zs-yFY"/>
+                        <outlet property="dogParkName" destination="RDa-gd-9JQ" id="kcx-lo-lGJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AjV-0I-pnR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1532" y="497"/>
+        </scene>
+        <!--Santa Cruz Dog Parks-->
+        <scene sceneID="9RU-9G-1BW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="h54-Ol-wlR" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Santa Cruz Dog Parks" id="yOL-xq-0w2"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="50G-8x-x1X">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="rp0-Vv-F1l" kind="relationship" relationship="rootViewController" id="rO3-2E-NcD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8D9-UO-XTX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="615" y="497"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="MY6-iM-Du0">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="kJW-DE-W2n" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="xGi-To-FdK">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="h54-Ol-wlR" kind="relationship" relationship="viewControllers" id="ehz-XB-iRG"/>
+                        <segue destination="YFB-PU-xqF" kind="relationship" relationship="viewControllers" id="fCe-x7-Sdq"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CbJ-hf-L3O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="784"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BrianAndGrumbeer" width="2448" height="3264"/>
+        <image name="DavidGudeman" width="979" height="551"/>
+        <image name="GrumbeerPuppy" width="2448" height="3264"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

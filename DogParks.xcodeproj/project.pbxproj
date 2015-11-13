@@ -1,0 +1,544 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5D02E63A1BD1599300A16824 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D02E6391BD1599300A16824 /* AppDelegate.swift */; };
+		5D02E63F1BD1599300A16824 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D02E63D1BD1599300A16824 /* Main.storyboard */; };
+		5D02E6411BD1599300A16824 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D02E6401BD1599300A16824 /* Images.xcassets */; };
+		5D02E6441BD1599300A16824 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D02E6421BD1599300A16824 /* LaunchScreen.xib */; };
+		5D02E6501BD1599300A16824 /* DogParksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D02E64F1BD1599300A16824 /* DogParksTests.swift */; };
+		5D02E65C1BD15CB700A16824 /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D02E65B1BD15CB700A16824 /* MyTableViewController.swift */; };
+		5D5F34361BD8586400F2FFC0 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5F34351BD8586400F2FFC0 /* AboutViewController.swift */; };
+		5D7465C61BD7021D00B16F2D /* dogonbeach.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D7465C51BD7021D00B16F2D /* dogonbeach.jpg */; };
+		5D7465C81BD7039F00B16F2D /* MyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7465C71BD7039F00B16F2D /* MyDetailViewController.swift */; };
+		5D7465CC1BD82CDD00B16F2D /* GrumbeerPuppy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D7465CB1BD82CDD00B16F2D /* GrumbeerPuppy.jpg */; };
+		5D7465CE1BD82CE300B16F2D /* BrianAndGrumbeer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D7465CD1BD82CE300B16F2D /* BrianAndGrumbeer.jpg */; };
+		5D7465D01BD82CE700B16F2D /* DavidGudeman.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D7465CF1BD82CE700B16F2D /* DavidGudeman.jpg */; };
+		5D7465E71BD83AD300B16F2D /* bigbasin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D7465D11BD83AD300B16F2D /* bigbasin.jpg */; };
+		5D7465E81BD83AD300B16F2D /* delavegapark.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D7465D21BD83AD300B16F2D /* delavegapark.jpg */; };
+		5D7465E91BD83AD300B16F2D /* frederickstreetpark.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D7465D31BD83AD300B16F2D /* frederickstreetpark.jpg */; };
+		5D7465EA1BD83AD300B16F2D /* grantstreetpark.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D7465D41BD83AD300B16F2D /* grantstreetpark.jpg */; };
+		5D7465EB1BD83AD300B16F2D /* henrycowellpark.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D7465D51BD83AD300B16F2D /* henrycowellpark.jpg */; };
+		5D7465EC1BD83AD300B16F2D /* itsbeach.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D7465D61BD83AD300B16F2D /* itsbeach.jpg */; };
+		5D7465ED1BD83AD300B16F2D /* lighthousefieldinterior.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D7465D71BD83AD300B16F2D /* lighthousefieldinterior.jpg */; };
+		5D7465EE1BD83AD300B16F2D /* manresastatebeach.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D7465D81BD83AD300B16F2D /* manresastatebeach.jpg */; };
+		5D7465EF1BD83AD300B16F2D /* mitchellscovebeach.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D7465D91BD83AD300B16F2D /* mitchellscovebeach.jpg */; };
+		5D7465F01BD83AD300B16F2D /* newbrightonstatebeach.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D7465DA1BD83AD300B16F2D /* newbrightonstatebeach.jpg */; };
+		5D7465F11BD83AD300B16F2D /* nisenemarksstatepark.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D7465DB1BD83AD300B16F2D /* nisenemarksstatepark.jpg */; };
+		5D7465F21BD83AD300B16F2D /* oceanviewpark.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D7465DC1BD83AD300B16F2D /* oceanviewpark.jpg */; };
+		5D7465F31BD83AD300B16F2D /* pachecodogpark.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D7465DD1BD83AD300B16F2D /* pachecodogpark.jpg */; };
+		5D7465F41BD83AD300B16F2D /* palmbeach.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D7465DE1BD83AD300B16F2D /* palmbeach.jpg */; };
+		5D7465F51BD83AD300B16F2D /* pintolakecountypark.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D7465DF1BD83AD300B16F2D /* pintolakecountypark.jpg */; };
+		5D7465F61BD83AD300B16F2D /* pogonipcitypark.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D7465E01BD83AD300B16F2D /* pogonipcitypark.jpg */; };
+		5D7465F71BD83AD300B16F2D /* pologroundscountypark.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D7465E11BD83AD300B16F2D /* pologroundscountypark.jpg */; };
+		5D7465F81BD83AD300B16F2D /* seabrightbeach.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D7465E21BD83AD300B16F2D /* seabrightbeach.jpg */; };
+		5D7465F91BD83AD300B16F2D /* seacliffandriodelmarbeaches.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D7465E31BD83AD300B16F2D /* seacliffandriodelmarbeaches.jpg */; };
+		5D7465FA1BD83AD300B16F2D /* skyparkdogpark.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D7465E41BD83AD300B16F2D /* skyparkdogpark.jpg */; };
+		5D7465FB1BD83AD300B16F2D /* twinlakesstatebeach.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D7465E51BD83AD300B16F2D /* twinlakesstatebeach.jpg */; };
+		5D7465FC1BD83AD300B16F2D /* universityterracepark.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D7465E61BD83AD300B16F2D /* universityterracepark.jpg */; };
+		5DACC19C1BD6E18D0068700A /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DACC19B1BD6E18D0068700A /* MyTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5D02E64A1BD1599300A16824 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5D02E62C1BD1599300A16824 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D02E6331BD1599300A16824;
+			remoteInfo = DogParks;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5D02E6341BD1599300A16824 /* DogParks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DogParks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D02E6381BD1599300A16824 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D02E6391BD1599300A16824 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5D02E63E1BD1599300A16824 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5D02E6401BD1599300A16824 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5D02E6431BD1599300A16824 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		5D02E6491BD1599300A16824 /* DogParksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DogParksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D02E64E1BD1599300A16824 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D02E64F1BD1599300A16824 /* DogParksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogParksTests.swift; sourceTree = "<group>"; };
+		5D02E65B1BD15CB700A16824 /* MyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
+		5D5F34351BD8586400F2FFC0 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		5D7465C51BD7021D00B16F2D /* dogonbeach.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dogonbeach.jpg; sourceTree = "<group>"; };
+		5D7465C71BD7039F00B16F2D /* MyDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDetailViewController.swift; sourceTree = "<group>"; };
+		5D7465CB1BD82CDD00B16F2D /* GrumbeerPuppy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GrumbeerPuppy.jpg; sourceTree = "<group>"; };
+		5D7465CD1BD82CE300B16F2D /* BrianAndGrumbeer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BrianAndGrumbeer.jpg; sourceTree = "<group>"; };
+		5D7465CF1BD82CE700B16F2D /* DavidGudeman.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = DavidGudeman.jpg; sourceTree = "<group>"; };
+		5D7465D11BD83AD300B16F2D /* bigbasin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bigbasin.jpg; sourceTree = "<group>"; };
+		5D7465D21BD83AD300B16F2D /* delavegapark.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = delavegapark.jpg; sourceTree = "<group>"; };
+		5D7465D31BD83AD300B16F2D /* frederickstreetpark.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = frederickstreetpark.jpg; sourceTree = "<group>"; };
+		5D7465D41BD83AD300B16F2D /* grantstreetpark.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = grantstreetpark.jpg; sourceTree = "<group>"; };
+		5D7465D51BD83AD300B16F2D /* henrycowellpark.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = henrycowellpark.jpg; sourceTree = "<group>"; };
+		5D7465D61BD83AD300B16F2D /* itsbeach.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = itsbeach.jpg; sourceTree = "<group>"; };
+		5D7465D71BD83AD300B16F2D /* lighthousefieldinterior.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lighthousefieldinterior.jpg; sourceTree = "<group>"; };
+		5D7465D81BD83AD300B16F2D /* manresastatebeach.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = manresastatebeach.jpg; sourceTree = "<group>"; };
+		5D7465D91BD83AD300B16F2D /* mitchellscovebeach.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mitchellscovebeach.jpg; sourceTree = "<group>"; };
+		5D7465DA1BD83AD300B16F2D /* newbrightonstatebeach.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = newbrightonstatebeach.jpg; sourceTree = "<group>"; };
+		5D7465DB1BD83AD300B16F2D /* nisenemarksstatepark.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nisenemarksstatepark.jpg; sourceTree = "<group>"; };
+		5D7465DC1BD83AD300B16F2D /* oceanviewpark.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = oceanviewpark.jpg; sourceTree = "<group>"; };
+		5D7465DD1BD83AD300B16F2D /* pachecodogpark.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pachecodogpark.jpg; sourceTree = "<group>"; };
+		5D7465DE1BD83AD300B16F2D /* palmbeach.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = palmbeach.jpg; sourceTree = "<group>"; };
+		5D7465DF1BD83AD300B16F2D /* pintolakecountypark.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pintolakecountypark.jpg; sourceTree = "<group>"; };
+		5D7465E01BD83AD300B16F2D /* pogonipcitypark.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pogonipcitypark.jpg; sourceTree = "<group>"; };
+		5D7465E11BD83AD300B16F2D /* pologroundscountypark.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pologroundscountypark.jpg; sourceTree = "<group>"; };
+		5D7465E21BD83AD300B16F2D /* seabrightbeach.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = seabrightbeach.jpg; sourceTree = "<group>"; };
+		5D7465E31BD83AD300B16F2D /* seacliffandriodelmarbeaches.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = seacliffandriodelmarbeaches.jpg; sourceTree = "<group>"; };
+		5D7465E41BD83AD300B16F2D /* skyparkdogpark.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = skyparkdogpark.jpg; sourceTree = "<group>"; };
+		5D7465E51BD83AD300B16F2D /* twinlakesstatebeach.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = twinlakesstatebeach.jpg; sourceTree = "<group>"; };
+		5D7465E61BD83AD300B16F2D /* universityterracepark.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = universityterracepark.jpg; sourceTree = "<group>"; };
+		5DACC19B1BD6E18D0068700A /* MyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5D02E6311BD1599300A16824 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D02E6461BD1599300A16824 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5D02E62B1BD1599300A16824 = {
+			isa = PBXGroup;
+			children = (
+				5D02E6361BD1599300A16824 /* DogParks */,
+				5D02E64C1BD1599300A16824 /* DogParksTests */,
+				5D02E6351BD1599300A16824 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5D02E6351BD1599300A16824 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D02E6341BD1599300A16824 /* DogParks.app */,
+				5D02E6491BD1599300A16824 /* DogParksTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5D02E6361BD1599300A16824 /* DogParks */ = {
+			isa = PBXGroup;
+			children = (
+				5D02E6391BD1599300A16824 /* AppDelegate.swift */,
+				5D7465C71BD7039F00B16F2D /* MyDetailViewController.swift */,
+				5DACC19B1BD6E18D0068700A /* MyTableViewCell.swift */,
+				5D02E65B1BD15CB700A16824 /* MyTableViewController.swift */,
+				5D02E63D1BD1599300A16824 /* Main.storyboard */,
+				5D5F34351BD8586400F2FFC0 /* AboutViewController.swift */,
+				5D02E6421BD1599300A16824 /* LaunchScreen.xib */,
+				5D02E6401BD1599300A16824 /* Images.xcassets */,
+				5D7465C51BD7021D00B16F2D /* dogonbeach.jpg */,
+				5D7465CB1BD82CDD00B16F2D /* GrumbeerPuppy.jpg */,
+				5D7465D11BD83AD300B16F2D /* bigbasin.jpg */,
+				5D7465D21BD83AD300B16F2D /* delavegapark.jpg */,
+				5D7465D31BD83AD300B16F2D /* frederickstreetpark.jpg */,
+				5D7465D41BD83AD300B16F2D /* grantstreetpark.jpg */,
+				5D7465D51BD83AD300B16F2D /* henrycowellpark.jpg */,
+				5D7465D61BD83AD300B16F2D /* itsbeach.jpg */,
+				5D7465D71BD83AD300B16F2D /* lighthousefieldinterior.jpg */,
+				5D7465D81BD83AD300B16F2D /* manresastatebeach.jpg */,
+				5D7465D91BD83AD300B16F2D /* mitchellscovebeach.jpg */,
+				5D7465DA1BD83AD300B16F2D /* newbrightonstatebeach.jpg */,
+				5D7465DB1BD83AD300B16F2D /* nisenemarksstatepark.jpg */,
+				5D7465DC1BD83AD300B16F2D /* oceanviewpark.jpg */,
+				5D7465DD1BD83AD300B16F2D /* pachecodogpark.jpg */,
+				5D7465DE1BD83AD300B16F2D /* palmbeach.jpg */,
+				5D7465DF1BD83AD300B16F2D /* pintolakecountypark.jpg */,
+				5D7465E01BD83AD300B16F2D /* pogonipcitypark.jpg */,
+				5D7465E11BD83AD300B16F2D /* pologroundscountypark.jpg */,
+				5D7465E21BD83AD300B16F2D /* seabrightbeach.jpg */,
+				5D7465E31BD83AD300B16F2D /* seacliffandriodelmarbeaches.jpg */,
+				5D7465E41BD83AD300B16F2D /* skyparkdogpark.jpg */,
+				5D7465E51BD83AD300B16F2D /* twinlakesstatebeach.jpg */,
+				5D7465E61BD83AD300B16F2D /* universityterracepark.jpg */,
+				5D7465CD1BD82CE300B16F2D /* BrianAndGrumbeer.jpg */,
+				5D7465CF1BD82CE700B16F2D /* DavidGudeman.jpg */,
+				5D02E6371BD1599300A16824 /* Supporting Files */,
+			);
+			path = DogParks;
+			sourceTree = "<group>";
+		};
+		5D02E6371BD1599300A16824 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5D02E6381BD1599300A16824 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5D02E64C1BD1599300A16824 /* DogParksTests */ = {
+			isa = PBXGroup;
+			children = (
+				5D02E64F1BD1599300A16824 /* DogParksTests.swift */,
+				5D02E64D1BD1599300A16824 /* Supporting Files */,
+			);
+			path = DogParksTests;
+			sourceTree = "<group>";
+		};
+		5D02E64D1BD1599300A16824 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5D02E64E1BD1599300A16824 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5D02E6331BD1599300A16824 /* DogParks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D02E6531BD1599300A16824 /* Build configuration list for PBXNativeTarget "DogParks" */;
+			buildPhases = (
+				5D02E6301BD1599300A16824 /* Sources */,
+				5D02E6311BD1599300A16824 /* Frameworks */,
+				5D02E6321BD1599300A16824 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DogParks;
+			productName = DogParks;
+			productReference = 5D02E6341BD1599300A16824 /* DogParks.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5D02E6481BD1599300A16824 /* DogParksTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D02E6561BD1599300A16824 /* Build configuration list for PBXNativeTarget "DogParksTests" */;
+			buildPhases = (
+				5D02E6451BD1599300A16824 /* Sources */,
+				5D02E6461BD1599300A16824 /* Frameworks */,
+				5D02E6471BD1599300A16824 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5D02E64B1BD1599300A16824 /* PBXTargetDependency */,
+			);
+			name = DogParksTests;
+			productName = DogParksTests;
+			productReference = 5D02E6491BD1599300A16824 /* DogParksTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5D02E62C1BD1599300A16824 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = DeAnza;
+				TargetAttributes = {
+					5D02E6331BD1599300A16824 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					5D02E6481BD1599300A16824 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 5D02E6331BD1599300A16824;
+					};
+				};
+			};
+			buildConfigurationList = 5D02E62F1BD1599300A16824 /* Build configuration list for PBXProject "DogParks" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5D02E62B1BD1599300A16824;
+			productRefGroup = 5D02E6351BD1599300A16824 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5D02E6331BD1599300A16824 /* DogParks */,
+				5D02E6481BD1599300A16824 /* DogParksTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5D02E6321BD1599300A16824 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D7465F91BD83AD300B16F2D /* seacliffandriodelmarbeaches.jpg in Resources */,
+				5D02E63F1BD1599300A16824 /* Main.storyboard in Resources */,
+				5D7465FA1BD83AD300B16F2D /* skyparkdogpark.jpg in Resources */,
+				5D7465EE1BD83AD300B16F2D /* manresastatebeach.jpg in Resources */,
+				5D7465F41BD83AD300B16F2D /* palmbeach.jpg in Resources */,
+				5D02E6441BD1599300A16824 /* LaunchScreen.xib in Resources */,
+				5D7465E71BD83AD300B16F2D /* bigbasin.jpg in Resources */,
+				5D7465E81BD83AD300B16F2D /* delavegapark.jpg in Resources */,
+				5D7465F81BD83AD300B16F2D /* seabrightbeach.jpg in Resources */,
+				5D7465EB1BD83AD300B16F2D /* henrycowellpark.jpg in Resources */,
+				5D02E6411BD1599300A16824 /* Images.xcassets in Resources */,
+				5D7465D01BD82CE700B16F2D /* DavidGudeman.jpg in Resources */,
+				5D7465FB1BD83AD300B16F2D /* twinlakesstatebeach.jpg in Resources */,
+				5D7465EC1BD83AD300B16F2D /* itsbeach.jpg in Resources */,
+				5D7465ED1BD83AD300B16F2D /* lighthousefieldinterior.jpg in Resources */,
+				5D7465F61BD83AD300B16F2D /* pogonipcitypark.jpg in Resources */,
+				5D7465EF1BD83AD300B16F2D /* mitchellscovebeach.jpg in Resources */,
+				5D7465EA1BD83AD300B16F2D /* grantstreetpark.jpg in Resources */,
+				5D7465E91BD83AD300B16F2D /* frederickstreetpark.jpg in Resources */,
+				5D7465CE1BD82CE300B16F2D /* BrianAndGrumbeer.jpg in Resources */,
+				5D7465FC1BD83AD300B16F2D /* universityterracepark.jpg in Resources */,
+				5D7465C61BD7021D00B16F2D /* dogonbeach.jpg in Resources */,
+				5D7465CC1BD82CDD00B16F2D /* GrumbeerPuppy.jpg in Resources */,
+				5D7465F31BD83AD300B16F2D /* pachecodogpark.jpg in Resources */,
+				5D7465F21BD83AD300B16F2D /* oceanviewpark.jpg in Resources */,
+				5D7465F71BD83AD300B16F2D /* pologroundscountypark.jpg in Resources */,
+				5D7465F51BD83AD300B16F2D /* pintolakecountypark.jpg in Resources */,
+				5D7465F11BD83AD300B16F2D /* nisenemarksstatepark.jpg in Resources */,
+				5D7465F01BD83AD300B16F2D /* newbrightonstatebeach.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D02E6471BD1599300A16824 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5D02E6301BD1599300A16824 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D02E63A1BD1599300A16824 /* AppDelegate.swift in Sources */,
+				5D02E65C1BD15CB700A16824 /* MyTableViewController.swift in Sources */,
+				5DACC19C1BD6E18D0068700A /* MyTableViewCell.swift in Sources */,
+				5D5F34361BD8586400F2FFC0 /* AboutViewController.swift in Sources */,
+				5D7465C81BD7039F00B16F2D /* MyDetailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D02E6451BD1599300A16824 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D02E6501BD1599300A16824 /* DogParksTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5D02E64B1BD1599300A16824 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D02E6331BD1599300A16824 /* DogParks */;
+			targetProxy = 5D02E64A1BD1599300A16824 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5D02E63D1BD1599300A16824 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D02E63E1BD1599300A16824 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5D02E6421BD1599300A16824 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D02E6431BD1599300A16824 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5D02E6511BD1599300A16824 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5D02E6521BD1599300A16824 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5D02E6541BD1599300A16824 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = DogParks/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5D02E6551BD1599300A16824 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = DogParks/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5D02E6571BD1599300A16824 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DogParksTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DogParks.app/DogParks";
+			};
+			name = Debug;
+		};
+		5D02E6581BD1599300A16824 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DogParksTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DogParks.app/DogParks";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5D02E62F1BD1599300A16824 /* Build configuration list for PBXProject "DogParks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D02E6511BD1599300A16824 /* Debug */,
+				5D02E6521BD1599300A16824 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D02E6531BD1599300A16824 /* Build configuration list for PBXNativeTarget "DogParks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D02E6541BD1599300A16824 /* Debug */,
+				5D02E6551BD1599300A16824 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D02E6561BD1599300A16824 /* Build configuration list for PBXNativeTarget "DogParksTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D02E6571BD1599300A16824 /* Debug */,
+				5D02E6581BD1599300A16824 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5D02E62C1BD1599300A16824 /* Project object */;
+}
