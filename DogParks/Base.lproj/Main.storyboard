@@ -28,12 +28,6 @@
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         </textView>
-                                        <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="DogParkHours" translatesAutoresizingMaskIntoConstraints="NO" id="okx-bc-2lI">
-                                            <rect key="frame" x="8" y="59" width="27" height="28"/>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                        </textView>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.40303032687216089" green="0.26891602588599262" blue="0.13307741904928644" alpha="1" colorSpace="calibratedRGB"/>
@@ -188,8 +182,8 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cpd-gl-fpu" userLabel="Dog Park Image">
                                 <rect key="frame" x="16" y="72" width="130" height="130"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="130" id="9gq-Hj-zkt"/>
-                                    <constraint firstAttribute="width" constant="130" id="bjX-EI-Nln"/>
+                                    <constraint firstAttribute="width" constant="130" id="bk1-hO-CZs"/>
+                                    <constraint firstAttribute="height" constant="130" id="q0a-yf-GgE"/>
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" misplaced="YES" editable="NO" text="Dog Park Name" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="RDa-gd-9JQ" userLabel="Dog Park Name">
@@ -197,34 +191,40 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Dog Park Details" translatesAutoresizingMaskIntoConstraints="NO" id="54w-8Y-fDX" userLabel="Dog Park Details">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Dog Park Details" translatesAutoresizingMaskIntoConstraints="NO" id="54w-8Y-fDX" userLabel="Dog Park Details">
                                 <rect key="frame" x="16" y="210" width="288" height="178"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="178" id="NP2-wf-ZMR"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="dogParkHours" translatesAutoresizingMaskIntoConstraints="NO" id="aZE-NH-z7C">
-                                <rect key="frame" x="25" y="420" width="267" height="99"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="dogParkHours" translatesAutoresizingMaskIntoConstraints="NO" id="aZE-NH-z7C" userLabel="Dog Park Hours">
+                                <rect key="frame" x="37" y="411" width="234" height="108"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hours:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fTg-Xj-4Aa">
-                                <rect key="frame" x="25" y="391" width="63" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="RDa-gd-9JQ" firstAttribute="leading" secondItem="cpd-gl-fpu" secondAttribute="trailing" constant="8" symbolic="YES" id="nTb-kA-G8i"/>
-                            <constraint firstItem="cpd-gl-fpu" firstAttribute="top" secondItem="Dwi-Wy-sWB" secondAttribute="bottom" constant="8" symbolic="YES" id="nYq-8v-fqO"/>
-                            <constraint firstItem="cpd-gl-fpu" firstAttribute="top" secondItem="RDa-gd-9JQ" secondAttribute="top" id="p8C-dD-FHc"/>
+                            <constraint firstItem="54w-8Y-fDX" firstAttribute="trailing" secondItem="Ka8-fd-DnQ" secondAttribute="trailingMargin" id="AF6-Gq-xOA"/>
+                            <constraint firstItem="54w-8Y-fDX" firstAttribute="leading" secondItem="Ka8-fd-DnQ" secondAttribute="leadingMargin" id="AKj-ms-3Iw"/>
+                            <constraint firstItem="aZE-NH-z7C" firstAttribute="leading" secondItem="Ka8-fd-DnQ" secondAttribute="leadingMargin" constant="21" id="Bgh-my-6X6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aZE-NH-z7C" secondAttribute="trailing" constant="33" id="NMy-aU-RhZ"/>
+                            <constraint firstItem="aZE-NH-z7C" firstAttribute="top" secondItem="54w-8Y-fDX" secondAttribute="bottom" constant="23" id="Qnn-om-nxG"/>
+                            <constraint firstItem="cpd-gl-fpu" firstAttribute="top" secondItem="RDa-gd-9JQ" secondAttribute="top" id="SP2-ZI-ggc"/>
+                            <constraint firstItem="RDa-gd-9JQ" firstAttribute="leading" secondItem="cpd-gl-fpu" secondAttribute="trailing" constant="8" symbolic="YES" id="XPa-MX-3bI"/>
+                            <constraint firstItem="54w-8Y-fDX" firstAttribute="top" secondItem="RDa-gd-9JQ" secondAttribute="bottom" constant="8" symbolic="YES" id="Z9f-F0-edq"/>
+                            <constraint firstItem="54w-8Y-fDX" firstAttribute="top" secondItem="cpd-gl-fpu" secondAttribute="bottom" constant="8" symbolic="YES" id="akw-rr-0xy"/>
+                            <constraint firstItem="cpd-gl-fpu" firstAttribute="top" secondItem="Dwi-Wy-sWB" secondAttribute="bottom" constant="8" symbolic="YES" id="o9n-zb-enD"/>
+                            <constraint firstItem="aZE-NH-z7C" firstAttribute="bottom" secondItem="Dw2-Ds-IlR" secondAttribute="top" id="sPl-Mi-S7u"/>
+                            <constraint firstItem="54w-8Y-fDX" firstAttribute="trailing" secondItem="RDa-gd-9JQ" secondAttribute="trailing" id="xjQ-1F-x0C"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="gPR-Fl-0I0"/>
                     <connections>
                         <outlet property="dogParkDetails" destination="54w-8Y-fDX" id="mPi-mr-3ZI"/>
+                        <outlet property="dogParkHours" destination="aZE-NH-z7C" id="CmG-tN-fBv"/>
                         <outlet property="dogParkImage" destination="cpd-gl-fpu" id="iCo-zs-yFY"/>
                         <outlet property="dogParkName" destination="RDa-gd-9JQ" id="kcx-lo-lGJ"/>
                     </connections>

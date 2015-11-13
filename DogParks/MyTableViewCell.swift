@@ -12,6 +12,7 @@ class MyTableViewCell: UITableViewCell {
 
     @IBOutlet weak var dogParkImage: UIImageView!
     @IBOutlet weak var dogParkTextView: UITextView!
+  
     
     override func awakeFromNib() {
         super.awakeFromNib()
