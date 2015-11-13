@@ -2,10 +2,11 @@
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14F27" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="DogParksObject" representedClassName="DogParks.DogParksObject" syncable="YES">
         <attribute name="dogParkDetails" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dogParkHours" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="dogParkImages" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="dogParkNames" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="DogParksObject" positionX="-63" positionY="-18" width="128" height="90"/>
+        <element name="DogParksObject" positionX="-63" positionY="-18" width="128" height="105"/>
     </elements>
 </model>

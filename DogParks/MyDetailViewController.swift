@@ -13,7 +13,9 @@ class MyDetailViewController: UIViewController {
     @IBOutlet weak var dogParkImage: UIImageView!
     @IBOutlet weak var dogParkName: UITextView!
     @IBOutlet weak var dogParkDetails: UITextView!
-    
+  
+  weak var dogParkHours : UITextView!
+  
 //    var dogParkImageText: String!
 //    var dogParkNameText: String!
 //    var dogParkDetailsText: String!
@@ -29,6 +31,8 @@ class MyDetailViewController: UIViewController {
         self.dogParkName.text = self.DogParksDetail.dogParkNames
         self.dogParkDetails.text = self.DogParksDetail.dogParkDetails
         self.dogParkImage.image = UIImage(named: self.DogParksDetail.dogParkImages)
+
+    
     }
 
     override func didReceiveMemoryWarning() {

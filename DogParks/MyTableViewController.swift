@@ -10,12 +10,13 @@ import UIKit
 import CoreData
 
 class MyTableViewController: UITableViewController, UISearchResultsUpdating {
+  
   let moc = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
-  
+  var myCSVContents = Array<Dictionary<String, String>>()
   var MyDogParks : [DogParksObject] = []
-  
   var searchController : UISearchController!
   var searchResults : [DogParksObject] = []
+  
 
 //    let dogParkNames = ["Big Basin Redwoods State Park", "The Forest of Nisene Marks State Park", " Henry Cowell Redwoods State Park", "ITS Beach", "Lighthouse Field Interior", "Manresa State Beach", "New Brighton State Beach", "Palm Beach", "Seabright Beach", "Seacliff and Rio Del Mar Beaches", "Twin Lakes State Beach", "Pogonip State Park", "City of Scotts Valley Sky Park Dog Park", "Delavega Park", "Fredrick Street Park", "Grant Street Park", "Mitchell's Cove Beach", "Ocean View Park", "Pacheco Dog Off-leash Area", "Pinto Lake County Park", "Polo Grounds County Park", "University Terrace Park"]
 //    let dogParkDetails = ["Dogs are allowed only on paved roads within the developed campgrounds and picnic areas, but not on park trails and dirt service roads. No dogs are allowed in Rancho Del Oso. 21600 Big Basin Way, Boulder Creek",
@@ -77,6 +78,55 @@ class MyTableViewController: UITableViewController, UISearchResultsUpdating {
       self.searchController.hidesNavigationBarDuringPresentation = false;
       self.tableView.tableHeaderView = self.searchController.searchBar
       
+      // Mark - CSV scanner
+      
+      
+      CSVScanner.runFunctionOnRowsFromFile(["name", "detail", "image", "hours"], withFileName: "DogParksData", withFunction: {
+        
+        (aRow:Dictionary<String, String>) in
+        
+        self.myCSVContents.append(aRow)
+        
+      })
+      NSLog("\(myCSVContents.count)")
+      
+     for var index = 0; index < myCSVContents.count; ++index {
+          //  NSLog(myCSVContents[index].description)
+ 
+            let myMOC = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
+
+            let dpObject = NSEntityDescription.insertNewObjectForEntityForName("DogParksObject", inManagedObjectContext: myMOC!) as! DogParksObject
+
+      
+      for (key, value) in  myCSVContents[index] {
+        if key == "name" {
+          dpObject.dogParkNames = value
+        } else if key == "detail" {
+          dpObject.dogParkDetails = value
+        } else if key == "image" {
+          dpObject.dogParkImages = value
+        } else if key == "hours" {
+          dpObject.dogParkHours = value
+        
+        
+        } else {
+        
+            var saveErr : NSError?
+            if myMOC!.save(&saveErr) != true {
+              println( "Insert to DB Error: \(saveErr?.localizedDescription)")
+              return
+            
+          }
+        
+        }
+        
+      
+      }
+      
+      
+      
+      ///////////////
+      
       let fr = NSFetchRequest(entityName: "DogParksObject")
       var e : NSError?
       
@@ -85,7 +135,7 @@ class MyTableViewController: UITableViewController, UISearchResultsUpdating {
         println("viewDidLoad Failed to retrieve record: \(e!.localizedDescription)")
       }
     }
-  
+  }
     override func viewDidAppear(animated: Bool) {
       let fr = NSFetchRequest(entityName: "DogParksObject")
       var e : NSError?
@@ -144,7 +194,7 @@ class MyTableViewController: UITableViewController, UISearchResultsUpdating {
       // Configure the cell...
       cell.dogParkTextView?.text = MyDogParks[indexPath.row].dogParkNames
       cell.dogParkImage?.image = UIImage(named: MyDogParks[indexPath.row].dogParkImages)
-
+      NSLog(MyDogParks[indexPath.row].dogParkImages)
       
 
         return cell

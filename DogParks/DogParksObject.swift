@@ -9,11 +9,11 @@
 import UIKit
 import CoreData
 
-class DogParksObject: NSManagedObjectContext {
+class DogParksObject: NSManagedObject {
   
   @NSManaged var dogParkNames : String!
   @NSManaged var dogParkDetails : String!
   @NSManaged var dogParkImages : String!
-  
+  @NSManaged var dogParkHours : String!
    
 }

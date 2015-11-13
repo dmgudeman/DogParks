@@ -44,6 +44,8 @@
 		5DACC19C1BD6E18D0068700A /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DACC19B1BD6E18D0068700A /* MyTableViewCell.swift */; };
 		710DFD111BF56FB70094B547 /* DogParks.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 710DFD0F1BF56FB70094B547 /* DogParks.xcdatamodeld */; };
 		710DFD131BF570030094B547 /* DogParksObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710DFD121BF570030094B547 /* DogParksObject.swift */; };
+		71E26F141BF669FC000A0A42 /* CSVScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E26F131BF669FC000A0A42 /* CSVScanner.swift */; };
+		71E26F161BF66BB2000A0A42 /* DogParksData.csv in Resources */ = {isa = PBXBuildFile; fileRef = 71E26F151BF66BB2000A0A42 /* DogParksData.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +100,8 @@
 		5DACC19B1BD6E18D0068700A /* MyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 		710DFD101BF56FB70094B547 /* DogParks.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DogParks.xcdatamodel; sourceTree = "<group>"; };
 		710DFD121BF570030094B547 /* DogParksObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogParksObject.swift; sourceTree = "<group>"; };
+		71E26F131BF669FC000A0A42 /* CSVScanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSVScanner.swift; sourceTree = "<group>"; };
+		71E26F151BF66BB2000A0A42 /* DogParksData.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DogParksData.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +148,7 @@
 				5D7465C71BD7039F00B16F2D /* MyDetailViewController.swift */,
 				5DACC19B1BD6E18D0068700A /* MyTableViewCell.swift */,
 				5D02E65B1BD15CB700A16824 /* MyTableViewController.swift */,
+				71E26F131BF669FC000A0A42 /* CSVScanner.swift */,
 				5D02E63D1BD1599300A16824 /* Main.storyboard */,
 				5D5F34351BD8586400F2FFC0 /* AboutViewController.swift */,
 				5D02E6421BD1599300A16824 /* LaunchScreen.xib */,
@@ -176,6 +181,7 @@
 				5D7465CF1BD82CE700B16F2D /* DavidGudeman.jpg */,
 				5D02E6371BD1599300A16824 /* Supporting Files */,
 				710DFD121BF570030094B547 /* DogParksObject.swift */,
+				71E26F151BF66BB2000A0A42 /* DogParksData.csv */,
 			);
 			path = DogParks;
 			sourceTree = "<group>";
@@ -296,6 +302,7 @@
 				5D7465F81BD83AD300B16F2D /* seabrightbeach.jpg in Resources */,
 				5D7465EB1BD83AD300B16F2D /* henrycowellpark.jpg in Resources */,
 				5D02E6411BD1599300A16824 /* Images.xcassets in Resources */,
+				71E26F161BF66BB2000A0A42 /* DogParksData.csv in Resources */,
 				5D7465D01BD82CE700B16F2D /* DavidGudeman.jpg in Resources */,
 				5D7465FB1BD83AD300B16F2D /* twinlakesstatebeach.jpg in Resources */,
 				5D7465EC1BD83AD300B16F2D /* itsbeach.jpg in Resources */,
@@ -332,6 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D02E63A1BD1599300A16824 /* AppDelegate.swift in Sources */,
+				71E26F141BF669FC000A0A42 /* CSVScanner.swift in Sources */,
 				5D02E65C1BD15CB700A16824 /* MyTableViewController.swift in Sources */,
 				710DFD131BF570030094B547 /* DogParksObject.swift in Sources */,
 				5DACC19C1BD6E18D0068700A /* MyTableViewCell.swift in Sources */,
