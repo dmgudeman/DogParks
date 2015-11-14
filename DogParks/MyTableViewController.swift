@@ -13,6 +13,7 @@ class MyTableViewController: UITableViewController, UISearchResultsUpdating {
   
   let moc = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
   var myCSVContents = Array<Dictionary<String, String>>()
+  
   var MyDogParks : [DogParksObject] = []
   var searchController : UISearchController!
   var searchResults : [DogParksObject] = []
