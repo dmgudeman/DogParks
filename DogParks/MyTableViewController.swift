@@ -30,6 +30,8 @@ class MyTableViewController: UITableViewController, UISearchResultsUpdating {
       self.searchController = UISearchController(searchResultsController: nil)
       self.searchController.searchBar.sizeToFit()
       self.searchController.hidesNavigationBarDuringPresentation = false;
+      searchController.searchResultsUpdater = self
+      searchController.dimsBackgroundDuringPresentation = false
       self.tableView.tableHeaderView = self.searchController.searchBar
       
       // Mark - CSV scanner
@@ -114,7 +116,11 @@ class MyTableViewController: UITableViewController, UISearchResultsUpdating {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
+      if searchController.active {
+        return searchResults.count
+      } else {
         return MyDogParks.count
+      }
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
