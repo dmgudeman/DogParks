@@ -9,7 +9,7 @@ Here is search bar function:
 ![Search](Search.png)
 The right arrow on the cell opens a new view
 that gives detailed information.
-![Details]((Details.png)
+![Details](Details.png)
 The tab bar at the bottom takes you to a new view that introduces the authors,
 Brian Fiala and myself.
 ![Authors](Authors.png)
