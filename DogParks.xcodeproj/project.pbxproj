@@ -14,7 +14,6 @@
 		5D02E6501BD1599300A16824 /* DogParksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D02E64F1BD1599300A16824 /* DogParksTests.swift */; };
 		5D02E65C1BD15CB700A16824 /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D02E65B1BD15CB700A16824 /* MyTableViewController.swift */; };
 		5D5F34361BD8586400F2FFC0 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5F34351BD8586400F2FFC0 /* AboutViewController.swift */; };
-		5D7465C61BD7021D00B16F2D /* dogonbeach.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D7465C51BD7021D00B16F2D /* dogonbeach.jpg */; };
 		5D7465C81BD7039F00B16F2D /* MyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7465C71BD7039F00B16F2D /* MyDetailViewController.swift */; };
 		5D7465CC1BD82CDD00B16F2D /* GrumbeerPuppy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D7465CB1BD82CDD00B16F2D /* GrumbeerPuppy.jpg */; };
 		5D7465CE1BD82CE300B16F2D /* BrianAndGrumbeer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D7465CD1BD82CE300B16F2D /* BrianAndGrumbeer.jpg */; };
@@ -70,7 +69,6 @@
 		5D02E64F1BD1599300A16824 /* DogParksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogParksTests.swift; sourceTree = "<group>"; };
 		5D02E65B1BD15CB700A16824 /* MyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
 		5D5F34351BD8586400F2FFC0 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
-		5D7465C51BD7021D00B16F2D /* dogonbeach.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dogonbeach.jpg; sourceTree = "<group>"; };
 		5D7465C71BD7039F00B16F2D /* MyDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDetailViewController.swift; sourceTree = "<group>"; };
 		5D7465CB1BD82CDD00B16F2D /* GrumbeerPuppy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GrumbeerPuppy.jpg; sourceTree = "<group>"; };
 		5D7465CD1BD82CE300B16F2D /* BrianAndGrumbeer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BrianAndGrumbeer.jpg; sourceTree = "<group>"; };
@@ -153,7 +151,6 @@
 				5D5F34351BD8586400F2FFC0 /* AboutViewController.swift */,
 				5D02E6421BD1599300A16824 /* LaunchScreen.xib */,
 				5D02E6401BD1599300A16824 /* Images.xcassets */,
-				5D7465C51BD7021D00B16F2D /* dogonbeach.jpg */,
 				5D7465CB1BD82CDD00B16F2D /* GrumbeerPuppy.jpg */,
 				5D7465D11BD83AD300B16F2D /* bigbasin.jpg */,
 				5D7465D21BD83AD300B16F2D /* delavegapark.jpg */,
@@ -313,7 +310,6 @@
 				5D7465E91BD83AD300B16F2D /* frederickstreetpark.jpg in Resources */,
 				5D7465CE1BD82CE300B16F2D /* BrianAndGrumbeer.jpg in Resources */,
 				5D7465FC1BD83AD300B16F2D /* universityterracepark.jpg in Resources */,
-				5D7465C61BD7021D00B16F2D /* dogonbeach.jpg in Resources */,
 				5D7465CC1BD82CDD00B16F2D /* GrumbeerPuppy.jpg in Resources */,
 				5D7465F31BD83AD300B16F2D /* pachecodogpark.jpg in Resources */,
 				5D7465F21BD83AD300B16F2D /* oceanviewpark.jpg in Resources */,
